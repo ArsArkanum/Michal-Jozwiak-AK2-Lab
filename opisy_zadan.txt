@@ -1,0 +1,11 @@
+Opis programów
+Lab1 Michał Jóźwiak 218263
+
+Zad.1 Program potencjalnie dodaje dwie liczby w systemie naturalnym dziesietnym. Wykorzystuje w tym celu bufor o długości 48 bitów.
+		Program w ogólności działa poprawnie. Dla liczb do długości ~25 cyfr robi to nawet szybko. Natomiast dla wiekszych liczb program wykonuje się bardzo wolno.
+		Jest to spowodowane używaniem algorytmu Hornera do zamiany liczb dwójkowych na cyfry dziesiętne. Należy dzielić całą liczbę przez 10, co dla liczb zajmujacych
+		dużą część bufora jest powolne (przynajmniej dla algorytmu, który przyjąłem).
+		
+Zad.2. Program kalkulator działa poprawnie i zgodnie z założeniami. Napisałem go natomiast już tylko dla liczb mieszczących się w rejestrze 64bit(z powodu powolności mojego algorytmu
+		z Zad.1 nie robi to większej różnicy, gdyż w rejestrze 64bit mieszczą sie liczby do 19 cyfr dziesiętnych). W związku z doświadczeniem nabytym podczas pisania poprzedniego programu,
+		kod dla Zad.2 jest "czytszy" i ogólniej czytelniejszy.
